@@ -2,8 +2,8 @@ namespace: book-dev
 
 resources:
   - ../../base
-  - namespace.yaml
+  
 
 images:
-  - name: yklee2002/book-api
+  - name: pagnaouk/book-api
     newTag: latest
