@@ -24,7 +24,7 @@ import com.example.book_api.service.BookService;
 })
 class BookApiApplicationTests {
 
-	@Autowired
+	@Autowired 
 	private BookService bookService;
 
 	@Autowired

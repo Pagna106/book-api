@@ -13,7 +13,7 @@ import org.springframework.web.server.ResponseStatusException;
 import com.example.book_api.model.Book;
 import com.example.book_api.service.BookService;
 
-@Controller   
+@Controller      
 public class BookController {   //test
 
     private final BookService bookService;  
@@ -47,7 +47,7 @@ public class BookController {   //test
         return getBook(id, model);
     }
 
-    @GetMapping({"/", "/books", "/allbooks"})
+    @GetMapping({"/", "/allbooks"})
     public String books(Model model) {
         List<Book> books = bookService.findAllBooks();
         model.addAttribute("books", books);
